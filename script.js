@@ -25,8 +25,8 @@ document.addEventListener('DOMContentLoaded', function(){
                 taskList.removeChild(li_element);
             };
             //appending the remove button to the li 
-            li_element.appendChild(remove);
-            taskList.appendChild(li_element);
+            li_element.append(remove);
+            taskList.append(li_element);
             //clearing the input field 
             taskInput.value = "";
         }
