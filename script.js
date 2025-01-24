@@ -6,12 +6,13 @@ document.addEventListener('DOMContentLoaded', function(){
     const taskList  = document.getElementById('task-list');
 
     //creation of the addTask Function 
-    function addTask(){
+    function addTask()  {
         let taskText = taskInput.value.trim();
         if (taskText === ""){
             alert("Please enter a task!!");
+            return;
         }
-        else{
+        
             //creation of task and removal
             const li_element = document.createElement('li');
             //setting the textContent to taskText
@@ -29,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function(){
             taskList.append(li_element);
             //clearing the input field 
             taskInput.value = "";
-        }
+        
     }
 
     //adding an event listener to the addButton 
